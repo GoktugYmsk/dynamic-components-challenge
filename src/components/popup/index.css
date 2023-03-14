@@ -1,0 +1,38 @@
+.popupBar {
+    background: rgb(3, 3, 3);
+    width: 200px;
+    height: 400px;
+    overflow-y: scroll; /* Dikey kaydırma çubuğu ekler */
+    color: white;
+  }
+  
+  .countryList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .country {
+    padding: 12px;
+    top: 45px;
+    position: relative;
+    font-weight: 650;
+  }
+  .popupHr{
+    width: 180px;
+    height: 4px;
+    background: yellow;
+    top: 40px;
+    position: relative;
+  }
+  .popupInput{
+    border-style: none;
+    background: rgb(3, 3, 3);
+    width: 180px;
+    height: 40px;
+    left: 8px;
+    position: relative;
+    color: white;
+    font-size: 20px;
+  }
+  
