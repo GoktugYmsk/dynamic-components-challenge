@@ -29,6 +29,7 @@
   z-index: 2;
   position: relative;
   left: 525px;
+  cursor: pointer;
 }
 
 .add:hover {
@@ -65,4 +66,19 @@
 
 .buttonHr:hover {
   background: rgb(229, 192, 60);
+}
+.create{
+  width: 150px;
+  height: 75px;
+  background: #4255ff;
+  border-radius: 10px;
+  color: white;
+  border-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  left: 554px;
+  top: 20px;
+  margin-bottom: 100px;
+  cursor: pointer;
 }

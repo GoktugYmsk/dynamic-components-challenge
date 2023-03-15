@@ -35,6 +35,7 @@ function App() {
         setShowPopup={setShowPopup}
         showPopup={showPopup}
       />
+      <button className='create' >Oluştur</button>
     </div>
   );
 }
