@@ -1,0 +1,126 @@
+.container {
+    width: 1254px;
+    height: 300px;
+    background: rgb(37, 67, 109);
+    display: flex;
+    color: white;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 60px;
+  }
+  
+  .altBar {
+    position: relative;
+    right: 1254px;
+  }
+  
+  .lefthr {
+    width: 500px;
+    position: relative;
+    left: 68px;
+    top: 200px;
+  }
+  
+  .righthr {
+    width: 500px;
+    position: relative;
+    left: 636px;
+    top: 146px;
+  }
+  
+  .term {
+    position: relative;
+    top: 200px;
+    left: 68px;
+  }
+  
+  .description {
+    position: relative;
+    top: 147px;
+    left: 636px;
+  }
+  
+  .languageLeft {
+    position: relative;
+    top: 110px;
+    left: 520px;
+    cursor: pointer;
+    color: rgb(102, 197, 208);
+    font-weight: 450;
+    width: 52px;
+  }
+  
+  .languageRight {
+    position: relative;
+    top: 76px;
+    left: 1088px;
+    cursor: pointer;
+    color: rgb(102, 197, 208);
+    font-weight: 450;
+    width: 52px;
+  }
+  
+  .languageLeft:hover {
+    color: rgb(229, 192, 60);
+  }
+  
+  .languageRight:hover {
+    color: rgb(229, 192, 60);
+  }
+  
+  .usthr {
+    display: flex;
+    position: relative;
+    width: 1254px;
+    height: 4px;
+    background: rgb(5, 63, 93);
+    border-style: none;
+  }
+  
+  .leftInput {
+    width: 500px;
+    border-style: none;
+    text-decoration: none;
+    background: rgb(37, 67, 109);
+    color: white;
+    position: relative;
+    top: 200px;
+    left: 68px;
+  }
+  
+  .rightInput {
+    width: 500px;
+    border-style: none;
+    text-decoration: none;
+    background: rgb(37, 67, 109);
+    color: white;
+    position: relative;
+    bottom: 2px;
+    left: 638px;
+  }
+  .picturePart{
+    display: flex;
+    position: relative;
+    left: 1140px;
+    bottom: 110px;
+    border:  1px dashed white;
+     border-radius: 10px;
+    width: 100px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .picturePart p {
+    position: relative;
+    right: 12px;
+    top: 20px;
+    font-size: 12px;
+  }
+  .pictureIcon{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    left: 20px;
+  }
+  

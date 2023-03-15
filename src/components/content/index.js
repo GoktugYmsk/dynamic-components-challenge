@@ -1,6 +1,10 @@
 import React from 'react'
 
-function Content({count,openPopup}) {
+import { AiOutlinePicture } from 'react-icons/ai';
+
+import './index.css'
+
+function Content({ count, openPopup }) {
     return (
         <>
             {Array.from({ length: count }, (_, i) => (
@@ -22,6 +26,10 @@ function Content({count,openPopup}) {
                             Dil seç
                         </p>
                         <input className="rightInput" placeholder="yaz" />
+                        <div className='picturePart' >
+                            <AiOutlinePicture className='pictureIcon' />
+                            <p>Resim</p>
+                        </div>
                     </div>
                 </div>
             ))}
