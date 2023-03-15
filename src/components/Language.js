@@ -3,9 +3,8 @@ import axios from "axios";
 
 import Popup from "./popup";
 
-function Language() {
+function Language({handleOpenPopup,setShowPopup,showPopup}) {
     const [languages, setLanguages] = useState([]);
-    const [showPopup, setShowPopup] = useState(false);
     const popupRef = useRef(null);
 
     useEffect(() => {
@@ -31,15 +30,10 @@ function Language() {
             document.removeEventListener("mousedown", handleClickOutsidePopup);
         };
     }, []);
-
-    const handleOpenPopup = () => {
-        setShowPopup(true);
-    };
     
     languages.sort((a, b) => a.languages[0].name.localeCompare(b.languages[0].name));
     return (
         <div>
-            <button onClick={handleOpenPopup}>aç</button>
             <ul ref={popupRef}>
                 {showPopup && (
                     <Popup setShow={handleOpenPopup} languages={languages} />

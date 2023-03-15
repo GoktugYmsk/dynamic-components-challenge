@@ -1,10 +1,11 @@
 .App {
 
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgb(5, 63, 93);
+  flex-direction: column;
 }
 
 .container {
@@ -14,9 +15,11 @@
   display: flex;
   color: white;
   border-radius: 15px;
+  position: relative;
+  margin-top: 60px;
 }
 
-.altBar{
+.altBar {
   position: relative;
   right: 1204px;
 }
@@ -74,11 +77,88 @@
 .languageRight:hover {
   color: rgb(229, 192, 60);
 }
-.usthr{
+
+.usthr {
   display: flex;
   position: relative;
   width: 1203px;
   height: 4px;
   background: rgb(5, 63, 93);
   border-style: none;
+}
+
+.leftInput {
+  width: 500px;
+  border-style: none;
+  text-decoration: none;
+  background: rgb(37, 67, 109);
+  color: white;
+  position: relative;
+  top: 200px;
+  left: 68px;
+}
+
+.rightInput {
+  width: 500px;
+  border-style: none;
+  text-decoration: none;
+  background: rgb(37, 67, 109);
+  color: white;
+  position: relative;
+  bottom: 2px;
+  left: 638px;
+}
+
+.addButton {
+  margin-top: 60px;
+  width: 1204px;
+  height: 150px;
+  background: rgb(37, 67, 109);
+  position: relative;
+  border-radius: 15px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.add {
+  background: none;
+  border-style: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  width: 200px;
+  z-index: 2;
+  position: relative;
+  left: 500px;
+}
+
+.add:hover {
+  color: rgb(229, 192, 60);
+}
+
+.containerNumber {
+  margin-left: 20px;
+}
+
+.buttonHr {
+  width: 100px;
+  height: 10px;
+  background: rgb(102, 197, 208);
+  border-style: none;
+}
+
+.buttonCount {
+  margin-top: 40px;
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.addPart:hover {
+  color: rgb(229, 192, 60);
+  cursor: pointer;
+}
+
+.buttonHr:hover {
+  background: rgb(229, 192, 60);
 }

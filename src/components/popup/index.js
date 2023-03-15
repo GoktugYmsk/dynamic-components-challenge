@@ -4,14 +4,12 @@ import './index.css'
 function Popup({ languages }) {
   const [searchTerm, setSearchTerm] = useState('')
 
-  // Filtrelenmiş dilleri hesapla
   const filteredLanguages = languages.filter((country) =>
     country.languages.some((lang) =>
       lang.name.toLowerCase().includes(searchTerm.toLowerCase())
     )
   )
 
-  // Arama girdisi değiştirildiğinde çağrılır
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value)
   }
