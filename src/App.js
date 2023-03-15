@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import Language from './components/Language';
+import Content from './components/content';
 
 import './App.css';
 
@@ -19,28 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      {Array.from({ length: count }, (_, i) => (
-        <div className="container" key={`container-${i}`}>
-          <div className="ustBar">
-            <p className='containerNumber' >{i + 1}</p>
-            <hr className="usthr" />
-          </div>
-          <div className="altBar">
-            <input className="leftInput" placeholder="yaz" />
-            <hr className="lefthr" />
-            <p className="term">TERİM</p>
-            <hr className="righthr" />
-            <p className="description">TANIM</p>
-            <p onClick={handleOpenPopup} className="languageLeft">
-              Dil seç
-            </p>
-            <p onClick={handleOpenPopup} className="languageRight">
-              Dil seç
-            </p>
-            <input className="rightInput" placeholder="yaz" />
-          </div>
-        </div>
-      ))}
+   <Content count={count} openPopup={handleOpenPopup}/>
       <div className='addButton' >
         <p className='buttonCount' >{count + 1}</p>
         <div className='addPart' >

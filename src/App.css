@@ -139,7 +139,10 @@
 .containerNumber {
   margin-left: 20px;
 }
-
+.addPart{
+  position: relative;
+  bottom: 35px;
+}
 .buttonHr {
   width: 100px;
   height: 10px;
