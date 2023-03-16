@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { AiOutlinePicture } from 'react-icons/ai';
 
+import Explanation from '../explanation';
 import './index.css';
 
 function Content({ count, openPopup }) {
@@ -17,6 +18,7 @@ function Content({ count, openPopup }) {
 
   return (
     <>
+      <Explanation />
       {Array.from({ length: count }, (_, i) => {
         const isLeftInputActive = inputActiveStates[i * 2];
         const isRightInputActive = inputActiveStates[i * 2 + 1];
