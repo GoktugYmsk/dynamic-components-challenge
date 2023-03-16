@@ -46,8 +46,9 @@
 }
 
 .pictureTicket {
-    width: 1254px;
+    width: 1253px;
     height: 200px;
+    background: rgb(37, 67, 109);
     border: 1px dashed white;
     align-items: center;
     justify-content: center;
