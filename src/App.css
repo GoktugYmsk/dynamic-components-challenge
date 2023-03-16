@@ -9,7 +9,7 @@
 
 
 .addButton {
-  margin-top: 60px;
+  margin-top: 220px;
   width: 1254px;
   height: 150px;
   background: rgb(37, 67, 109);
@@ -81,4 +81,7 @@
   top: 20px;
   margin-bottom: 100px;
   cursor: pointer;
+}
+.create:hover{
+  background: #3848d7;
 }

@@ -1,14 +1,13 @@
-import { useState } from 'react';
-
-
-import Language from './components/Language';
+import { useState, useEffect } from 'react';
+import Header from './components/header';
 import Content from './components/content';
+import Language from './components/Language';
 import './App.css';
-
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
   const [count, setCount] = useState(1);
+  const [headerActive, setHeaderActive] = useState(false);
 
   const handleOpenPopup = () => {
     setShowPopup(true);
@@ -18,16 +17,28 @@ function App() {
     setCount(count + 1);
   };
 
+  useEffect(() => {
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+      const headerVisible = currentScrollY > 0;
+      setHeaderActive(headerVisible);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="App">
-   <Content count={count} openPopup={handleOpenPopup}/>
-      <div className='addButton' >
-        <p className='buttonCount' >{count + 1}</p>
-        <div className='addPart' >
+      {headerActive && <Header />}
+      <Content count={count} openPopup={handleOpenPopup} />
+      <div className="addButton">
+        <p className="buttonCount">{count + 1}</p>
+        <div className="addPart">
           <button className="add" onClick={handleAddContainer}>
             + Kart Ekle
           </button>
-          <hr className='buttonHr' />
+          <hr className="buttonHr" />
         </div>
       </div>
       <Language
@@ -35,8 +46,9 @@ function App() {
         setShowPopup={setShowPopup}
         showPopup={showPopup}
       />
-      <button className='create' >Oluştur</button>
+      <button className="create">Oluştur</button>
     </div>
   );
 }
+
 export default App;

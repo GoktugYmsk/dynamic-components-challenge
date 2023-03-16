@@ -1,0 +1,33 @@
+.activeNavbar {
+    width: 100%;
+    height: 150px;
+    background: rgb(5, 63, 93);
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    top: 0;
+}
+
+.activeNavbar h2 {
+    color: white;
+    padding: 40px;
+    margin-left: 40px;
+}
+
+.activeBarButton {
+    width: 100px;
+    height: 40px;
+    background: #4255ff;
+    border-style: none;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    top: 60px;
+    left: 850px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.activeBarButton:hover {
+    background: #3848d7;
+}

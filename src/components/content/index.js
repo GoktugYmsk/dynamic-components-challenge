@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+
 import { AiOutlinePicture } from 'react-icons/ai';
+
 import './index.css';
 
 function Content({ count, openPopup }) {
