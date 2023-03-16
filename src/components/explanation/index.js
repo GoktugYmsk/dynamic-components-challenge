@@ -15,7 +15,7 @@ function Explanation() {
             </div>
             <div className='pictureTicket' >
                 <h2> Bir görseli ekle ve etiketle </h2>
-                <p className='addTicket' >İstediğiniz herahngi bir resmisürükleyip bırakın veya `etiket`</p>
+                <p className='addTicket' >İstediğiniz herahngi bir resmi sürükleyip bırakın veya `etiket`</p>
             </div>
         </>
     )

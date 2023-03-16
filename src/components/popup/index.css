@@ -5,10 +5,22 @@
     overflow-y: scroll;
     color: white;
     position: relative;
-    bottom: 450px;
+    bottom: 250px;
+    right: 200px;
+    z-index: 2;
+    box-shadow: 0 0 4px 0.3px rgba(255, 255, 255, 0.8);
+}
+
+.popupBar {
+    background: rgb(3, 3, 3);
+    width: 200px;
+    height: 200px;
+    overflow-y: scroll;
+    color: white;
+    position: relative;
+    bottom: 600px;
     right: 200px;
     box-shadow: 0 0 4px 0.3px rgba(255, 255, 255, 0.8);
-
 }
 
 .countryList {

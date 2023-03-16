@@ -15,22 +15,22 @@ function Popup({ languages }) {
   }
 
   return (
-    <div className='popupBar'>
-      <ul className='countryList'>
-        <hr className='popupHr' />
-        <input
-          className='popupInput'
-          placeholder='Dillerde ara'
-          value={searchTerm}
-          onChange={handleSearchChange}
-        />
-        {filteredLanguages.map((country) => (
-          <li className='country' key={country.alpha2Code}>
-            {country.languages.map((lang) => lang.name).join(', ')}
-          </li>
-        ))}
-      </ul>
-    </div>
+      <div className='popupBar'>
+        <ul className='countryList'>
+          <hr className='popupHr' />
+          <input
+            className='popupInput'
+            placeholder='Dillerde ara'
+            value={searchTerm}
+            onChange={handleSearchChange}
+          />
+          {filteredLanguages.map((country) => (
+            <li className='country' key={country.alpha2Code}>
+              {country.languages.map((lang) => lang.name).join(', ')}
+            </li>
+          ))}
+        </ul>
+      </div>
   )
 }
 
