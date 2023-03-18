@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
+
 import { AiOutlinePicture } from 'react-icons/ai';
 
 function AltBar({ setInputActive, openPopup, i, isLeftInputActive, isRightInputActive }) {
-    const [view, setView] = useState('');
 
     const handleChange = (event) => {
         const inputValue = event.target.value;
-        setView(inputValue);
         console.log(inputValue);
     };
 
