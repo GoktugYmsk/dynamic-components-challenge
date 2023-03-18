@@ -1,14 +1,22 @@
-import React from 'react'
-
+import React, { useState } from 'react';
 import { AiOutlinePicture } from 'react-icons/ai';
 
-function AltBar({setInputActive, openPopup,i, isLeftInputActive,isRightInputActive}) {
+function AltBar({ setInputActive, openPopup, i, isLeftInputActive, isRightInputActive }) {
+    const [view, setView] = useState('');
+
+    const handleChange = (event) => {
+        const inputValue = event.target.value;
+        setView(inputValue);
+        console.log(inputValue);
+    };
+
     return (
         <div className="altBar">
             <input
                 className="leftInput"
                 onClick={() => setInputActive(i * 2, true)}
                 onBlur={() => setInputActive(i * 2, false)}
+                onChange={handleChange}
             />
             <hr className={`lefthr ${isLeftInputActive ? 'hrColor' : ''}`} />
             <p className="term">TERİM</p>
@@ -22,6 +30,7 @@ function AltBar({setInputActive, openPopup,i, isLeftInputActive,isRightInputActi
             </p>
             <input
                 className="rightInput"
+                onChange={handleChange}
                 onClick={() => setInputActive(i * 2 + 1, true)}
                 onBlur={() => setInputActive(i * 2 + 1, false)}
             />
@@ -30,7 +39,7 @@ function AltBar({setInputActive, openPopup,i, isLeftInputActive,isRightInputActi
                 <p>Resim</p>
             </div>
         </div>
-    )
+    );
 }
 
-export default AltBar
+export default AltBar;

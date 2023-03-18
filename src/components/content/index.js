@@ -5,7 +5,7 @@ import Ustbar from './ustBar/İndex';
 import AltBar from './altBar/İndex';
 import './index.css';
 
-function Content({ count, openPopup }) {
+function Content({ count, openPopup, handleAddContainer }) {
   const [inputActiveStates, setInputActiveStates] = useState(Array.from({ length: count }, () => false));
 
   const setInputActive = (index, value) => {
@@ -26,10 +26,20 @@ function Content({ count, openPopup }) {
         return (
           <div className="container" key={`container-${i}`}>
             <Ustbar i={i} />
-           <AltBar setInputActive={setInputActive} openPopup={openPopup} i={i} isLeftInputActive={isLeftInputActive} isRightInputActive={isRightInputActive} />
+            <AltBar setInputActive={setInputActive} openPopup={openPopup} i={i} isLeftInputActive={isLeftInputActive} isRightInputActive={isRightInputActive} />
           </div>
         );
       })}
+      <div className="addButton">
+        <p className="buttonCount">{count + 1}</p>
+        <div className="addPart">
+          <button className="add" onClick={handleAddContainer}>
+            + Kart Ekle
+          </button>
+          <hr className="buttonHr" />
+        </div>
+      </div>
+      <button className="create">Oluştur</button>
     </>
   );
 }

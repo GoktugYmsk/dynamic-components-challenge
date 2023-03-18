@@ -32,22 +32,12 @@ function App() {
   return (
     <div className="App">
       {headerActive && <Header />}
-      <Content count={count} openPopup={handleOpenPopup} />
-      <div className="addButton">
-        <p className="buttonCount">{count + 1}</p>
-        <div className="addPart">
-          <button className="add" onClick={handleAddContainer}>
-            + Kart Ekle
-          </button>
-          <hr className="buttonHr" />
-        </div>
-      </div>
+      <Content count={count} openPopup={handleOpenPopup} handleAddContainer={handleAddContainer} />
       <Language
         handleOpenPopup={handleOpenPopup}
         setShowPopup={setShowPopup}
         showPopup={showPopup}
       />
-      <button className="create">Oluştur</button>
     </div>
   );
 }
