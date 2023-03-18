@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
-import Popup from "./popup";
+import Popup from "../popup";
 
 function Language({handleOpenPopup,setShowPopup,showPopup}) {
     const [languages, setLanguages] = useState([]);

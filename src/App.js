@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+
 import Header from './components/header';
 import Content from './components/content';
-import Language from './components/Language';
+import Language from './components/language';
 import './App.css';
 
 function App() {
