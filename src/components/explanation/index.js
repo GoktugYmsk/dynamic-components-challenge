@@ -3,6 +3,10 @@ import React from 'react'
 import './index.css'
 
 function Explanation() {
+
+    const explanationClickButton = () =>{
+        console.log('Navbardaki buton ile yeni bir prje oluştur')
+    }
     return (
         <>
             <div className='navbar' >
@@ -11,7 +15,7 @@ function Explanation() {
             <hr className='navbarHr' />
             <div className='explanation' >
                 <h2>Yeni Çalışma Seti Oluştur</h2>
-                <button className='explanationBarButton' >Oluştur</button>
+                <button onClick={explanationClickButton} className='explanationBarButton' >Oluştur</button>
             </div>
             <div className='pictureTicket' >
                 <h2> Bir görseli ekle ve etiketle </h2>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { AiOutlinePicture } from 'react-icons/ai';
 

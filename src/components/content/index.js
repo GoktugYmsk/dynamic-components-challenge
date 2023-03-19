@@ -16,6 +16,10 @@ function Content({ count, openPopup, handleAddContainer }) {
     });
   };
 
+  const handleClickButton = () =>{
+    console.log('Yeni kart oluştur')
+  }
+
   return (
     <>
       <Explanation />
@@ -39,7 +43,7 @@ function Content({ count, openPopup, handleAddContainer }) {
           <hr className="buttonHr" />
         </div>
       </div>
-      <button className="create">Oluştur</button>
+      <button onClick={handleClickButton} className="create">Oluştur</button>
     </>
   );
 }
